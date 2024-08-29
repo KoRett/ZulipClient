@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:background="@color/jungle_green">
+
+    <TextView
+        android:id="@+id/textNameTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/common_small_margin"
+        android:layout_marginStart="41dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textSize="@dimen/main_text_size"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toTopOf="@id/viewLine"
+        app:layout_constraintEnd_toStartOf="@id/textMessageCount"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Testing" />
+
+    <TextView
+        android:id="@+id/textMessageCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="@dimen/common_big_margin"
+        android:textSize="@dimen/normal_text_size"
+        app:layout_constraintBottom_toBottomOf="@id/textNameTopic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textNameTopic"
+        app:layout_constraintTop_toTopOf="@id/textNameTopic"
+        tools:text="1240 mes" />
+
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/common_line_height"
+        android:background="?attr/colorSurface"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageAvatarShimmer"
+                android:layout_width="185dp"
+                android:layout_height="185dp"
+                android:background="@color/common_shimmer_color"
+                app:layout_constraintBottom_toTopOf="@id/textNameShimmer"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.3"
+                app:layout_constraintVertical_chainStyle="packed"
+                app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Large" />
+
+            <TextView
+                android:id="@+id/textNameShimmer"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/common_small_margin"
+                android:layout_marginTop="@dimen/common_normal_margin"
+                android:background="@color/common_shimmer_color"
+                android:textSize="32sp"
+                app:layout_constraintBottom_toTopOf="@id/textStatusShimmer"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageAvatarShimmer" />
+
+            <TextView
+                android:id="@+id/textStatusShimmer"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:background="@color/common_shimmer_color"
+                android:textSize="@dimen/big_text_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textNameShimmer" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+</merge>

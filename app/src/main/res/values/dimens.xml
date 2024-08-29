@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_small_margin">10dp</dimen>
+    <dimen name="common_normal_margin">16dp</dimen>
+    <dimen name="common_big_margin">20dp</dimen>
+
+    <dimen name="common_small_padding">10dp</dimen>
+    <dimen name="common_normal_padding">16dp</dimen>
+    <dimen name="common_big_padding">20dp</dimen>
+
+    <dimen name="common_line_height">2dp</dimen>
+
+    <dimen name="message_content_vertical_padding">8dp</dimen>
+    <dimen name="message_horizontal_padding">60dp</dimen>
+
+    <dimen name="emoji_bg_corner_radius">8dp</dimen>
+    <dimen name="common_bg_corner_radius_small">5dp</dimen>
+    <dimen name="common_bg_corner_radius">18dp</dimen>
+    <dimen name="common_bg_corner_radius_big">32dp</dimen>
+
+    <dimen name="message_common_margin_horizontal">16dp</dimen>
+
+    <dimen name="small_text_size">14sp</dimen>
+    <dimen name="normal_text_size">16sp</dimen>
+    <dimen name="main_text_size">18sp</dimen>
+    <dimen name="big_text_size">20sp</dimen>
+    <dimen name="large_text_size">22sp</dimen>
+    <dimen name="extra_large_text_size">24sp</dimen>
+</resources>

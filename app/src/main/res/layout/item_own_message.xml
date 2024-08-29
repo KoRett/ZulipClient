@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="@dimen/common_small_padding"
+    android:paddingStart="@dimen/message_horizontal_padding"
+    android:paddingEnd="@dimen/common_big_padding">
+
+    <TextView
+        android:id="@+id/textOwnContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/own_message_bg"
+        android:paddingHorizontal="@dimen/common_normal_padding"
+        android:paddingVertical="@dimen/message_content_vertical_padding"
+        android:textAppearance="@style/Widget.App.MessageTextContentStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Some message" />
+
+    <com.korett.zulip_client.core.ui.view.FlexBoxLayout
+        android:id="@+id/ownReactions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_small_margin"
+        android:visibility="gone"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textOwnContent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

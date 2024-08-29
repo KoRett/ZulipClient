@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textNameStreamShimmer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/common_big_margin"
+            android:layout_marginStart="@dimen/common_big_padding"
+            android:background="@color/common_shimmer_color"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@id/viewLine"
+            app:layout_constraintEnd_toStartOf="@id/imageArrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/common_big_margin"
+            android:contentDescription="@string/arrow"
+            android:src="@drawable/arrow_ic"
+            app:layout_constraintBottom_toBottomOf="@id/textNameStreamShimmer"
+            app:layout_constraintEnd_toStartOf="@id/buttonOptions"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toEndOf="@id/textNameStreamShimmer"
+            app:layout_constraintTop_toTopOf="@id/textNameStreamShimmer"
+            app:tint="@color/common_shimmer_color" />
+
+        <ImageButton
+            android:id="@+id/buttonOptions"
+            style="@style/Widget.App.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_small_margin"
+            android:layout_marginEnd="@dimen/common_big_margin"
+            android:src="@drawable/more_vert_ic"
+            app:layout_constraintBottom_toBottomOf="@id/imageArrow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageArrow"
+            app:layout_constraintTop_toTopOf="@id/imageArrow"
+            app:tint="@color/common_shimmer_color" />
+
+        <View
+            android:id="@+id/viewLine"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/common_line_height"
+            android:background="?attr/colorSurfaceInverse"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.facebook.shimmer.ShimmerFrameLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="EmojiViewStyle">
+        <item name="android:background">@drawable/emoji_bg</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/emoji_text_color</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="Widget.App.MessageTextUsernameStyle" parent="">
+        <item name="android:textSize">@dimen/small_text_size</item>
+        <item name="android:textColor">?attr/colorPrimaryContainer</item>
+    </style>
+
+    <style name="Widget.App.MessageTextContentStyle" parent="">
+        <item name="android:textSize">@dimen/normal_text_size</item>
+    </style>
+
+    <style name="Widget.App.MessageInputFieldStyle" parent="">
+        <item name="android:background">@drawable/common_bg</item>
+        <item name="android:backgroundTint">?attr/colorSurfaceInverse</item>
+        <item name="android:textColor">@color/common_main_text_color</item>
+        <item name="android:hint">@string/write_and_ellipsis</item>
+        <item name="android:importantForAutofill">no</item>
+        <item name="android:inputType">textCapSentences|textMultiLine</item>
+        <item name="android:maxLines">5</item>
+        <item name="android:paddingHorizontal">@dimen/common_big_padding</item>
+        <item name="android:paddingVertical">@dimen/common_small_padding</item>
+        <item name="android:requiresFadingEdge">vertical</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Widget.App.Toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="titleTextAppearance">@style/Widget.App.Toolbar.TextAppearance</item>
+        <item name="android:background">?attr/colorSurfaceVariant</item>
+    </style>
+
+    <style name="Widget.App.Toolbar.TextAppearance" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textSize">@dimen/extra_large_text_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/inter</item>
+    </style>
+
+    <style name="Widget.App.Toolbar.TextAppearance.Center" parent="Widget.App.Toolbar.TextAppearance">
+        <item name="android:gravity">center</item>
+        <item name="fontFamily">@font/inter</item>
+    </style>
+
+    <style name="Widget.App.TabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabTextAppearance">@style/Widget.App.TabLayout.TextAppearance</item>
+        <item name="tabIndicator">@drawable/tab_indicator</item>
+        <item name="tabIndicatorColor">@color/selected_tab</item>
+        <item name="android:backgroundTint">?attr/colorSurfaceVariant</item>
+        <item name="tabIndicatorFullWidth">true</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabTextColor">@color/common_main_text_color</item>
+        <item name="tabRippleColor">@color/common_main_text_color</item>
+    </style>
+
+    <style name="Widget.App.TabLayout.TextAppearance" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textSize">@dimen/large_text_size</item>
+        <item name="fontFamily">@font/inter</item>
+    </style>
+
+    <style name="Widget.App.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.BottomNavigationView</item>
+        <item name="fontFamily">@font/inter</item>
+    </style>
+
+    <style name="ThemeOverlay.App.BottomNavigationView" parent="">
+        <item name="colorPrimary">@color/light_eerie_black</item>
+        <item name="colorOnSurface">@color/common_main_text_color</item>
+        <item name="colorOnSurfaceVariant">@color/philippine_gray</item>
+        <item name="colorOnSecondaryContainer">@color/common_main_text_color</item>
+    </style>
+
+    <style name="Widget.App.SearchFieldStyle" parent="">
+        <item name="android:backgroundTint">@color/search_field_background_tint</item>
+        <item name="android:inputType">textNoSuggestions</item>
+        <item name="android:textColorHint">@color/common_main_text_color</item>
+        <item name="android:textSize">@dimen/extra_large_text_size</item>
+    </style>
+
+    <style name="Widget.App.PopupMenu" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">?attr/colorSurfaceContainer</item>
+        <item name="textAppearanceLargePopupMenu">
+            @style/Widget.App.PopupMenu.PopupMenuTextAppearanceLarge
+        </item>
+    </style>
+
+    <style name="Widget.App.PopupMenu.PopupMenuTextAppearanceLarge" parent="@android:style/TextAppearance.DeviceDefault.Widget.PopupMenu.Large">
+        <item name="android:textColor">@color/common_main_text_color</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="fontFamily">@font/inter</item>
+    </style>
+
+    <style name="Widget.App.IconButton" parent="">
+        <item name="android:background">@drawable/circle_ripple</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:padding">@dimen/common_small_padding</item>
+    </style>
+
+    <style name="Widget.App.Button.ButtonText" parent="">
+        <item name="android:background">@drawable/rectangle_ripple</item>
+        <item name="android:padding">@dimen/common_small_padding</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="Widget.App.TextOptions" parent="">
+        <item name="android:paddingHorizontal">@dimen/big_text_size</item>
+        <item name="android:paddingVertical">@dimen/common_small_padding</item>
+        <item name="android:background">@drawable/rectangle_ripple</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textSize">@dimen/big_text_size</item>
+    </style>
+
+</resources>

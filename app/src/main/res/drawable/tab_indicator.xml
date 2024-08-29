@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:end="40dp"
+        android:start="40dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/common_bg_corner_radius_small" />
+            <solid android:color="@color/selected_tab" />
+        </shape>
+    </item>
+</layer-list>

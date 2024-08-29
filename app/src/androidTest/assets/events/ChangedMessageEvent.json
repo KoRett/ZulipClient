@@ -1,0 +1,22 @@
+{
+  "result": "success",
+  "msg": "",
+  "events": [
+    {
+      "type": "reaction",
+      "op": "add",
+      "user_id": 709765,
+      "user": {
+        "user_id": 709765,
+        "email": "user709765@tinkoff-android-spring-2024.zulipchat.com",
+        "full_name": "Rostislav Kashentsev"
+      },
+      "message_id": 438198890,
+      "emoji_name": "wink",
+      "emoji_code": "1f609",
+      "reaction_type": "unicode_emoji",
+      "id": 0
+    }
+  ],
+  "queue_id": "38361fda-de01-419f-8606-4300b4398b8b"
+}

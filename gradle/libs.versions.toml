@@ -1,0 +1,114 @@
+[versions]
+agp = "8.3.2"
+kotlin = "1.9.23"
+googleDevtools = "1.9.23-1.0.20"
+coreKtx = "1.13.1"
+junit = "4.13.2"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+material = "1.12.0"
+activity = "1.9.0"
+fragment = "1.7.1"
+constraintlayout = "2.1.4"
+cicerone = "7.1"
+bindingdelegate = "1.5.9"
+glide = "4.16.0"
+coroutines = "1.8.0"
+lifecycle = "2.8.0"
+shimmer = "0.5.0"
+retrofit = "2.11.0"
+okhttp3 = "4.7.2"
+serialization = "1.6.3"
+serialization-converter = "2.11.0"
+serialization-plugin = "1.9.23"
+emoji2 = "1.4.0"
+elmslie = "3.0.0-alpha10"
+dagger = "2.51.1"
+room = "2.6.1"
+kotest = "5.8.1"
+rules = "1.5.0"
+kaspresso = "1.5.5"
+wiremock = "2.27.2"
+hamcrest = "2.2"
+androidx-test = "1.5.0"
+httpclientAndroid = "4.3.5.1"
+junitKtx = "1.1.5"
+fragmentTesting = "1.7.1"
+
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity-ktx", version.ref = "activity" }
+androidx-fragment = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "fragment" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+
+terrakok-cicerone = { group = "com.github.terrakok", name = "cicerone", version.ref = "cicerone" }
+
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+
+kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }
+kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }
+
+androidx-lifecycle = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+
+bindingDelegate-full = { group = "com.github.kirich1409", name = "viewbindingpropertydelegate-full", version.ref = "bindingdelegate" }
+bindingDelegate-noreflection = { group = "com.github.kirich1409", name = "viewbindingpropertydelegate-noreflection", version.ref = "bindingdelegate" }
+
+facebook-shimmer = { group = "com.facebook.shimmer", name = "shimmer", version.ref = "shimmer" }
+
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+kotlinx-serialization = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "serialization" }
+retrofitConverter = { group = "com.squareup.retrofit2", name = "converter-kotlinx-serialization", version.ref = "serialization-converter" }
+okkhttp3 = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp3" }
+okkhttp3LogingInterceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp3" }
+
+httpclient-android = { module = "org.apache.httpcomponents:httpclient-android", version.ref = "httpclientAndroid" }
+
+androidx-emoji2 = { group = "androidx.emoji2", name = "emoji2", version.ref = "emoji2" }
+androidx-emoji2-views-helper = { group = "androidx.emoji2", name = "emoji2-views-helper", version.ref = "emoji2" }
+androidx-emoji2-views = { group = "androidx.emoji2", name = "emoji2-views", version.ref = "emoji2" }
+androidx-emoji2-emojipicker = { group = "androidx.emoji2", name = "emoji2-emojipicker", version.ref = "emoji2" }
+
+elmslie-core = { group = "com.github.vivid-money.elmslie", name = "elmslie-core", version.ref = "elmslie" }
+elmslie-android = { group = "com.github.vivid-money.elmslie", name = "elmslie-android", version.ref = "elmslie" }
+
+dagger = { group = "com.google.dagger", name = "dagger", version.ref = "dagger" }
+daggerCompiler = { group = "com.google.dagger", name = "dagger-compiler", version.ref = "dagger" }
+
+room = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+roomCompiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+kotest-junit = { group = "io.kotest", name = "kotest-runner-junit5", version.ref = "kotest" }
+kotest-assertions = { group = "io.kotest", name = "kotest-assertions-core", version.ref = "kotest" }
+kotest-property = { group = "io.kotest", name = "kotest-property", version.ref = "kotest" }
+
+androidx-rules = { group = "androidx.test", name = "rules", version.ref = "rules" }
+androidx-test-core = { group = "androidx.test", name = "core", version.ref = "androidx-test" }
+
+androidx-espresso-intents = { module = "androidx.test.espresso:espresso-intents", version.ref = "espressoCore" }
+kaspresso = { group = "com.kaspersky.android-components", name = "kaspresso", version.ref = "kaspresso" }
+
+wiremock = { group = "com.github.tomakehurst", name = "wiremock-standalone", version.ref = "wiremock" }
+hamcrest = { group = "org.hamcrest", name = "hamcrest", version.ref = "hamcrest" }
+
+androidx-junit-ktx = { group = "androidx.test.ext", name = "junit-ktx", version.ref = "junitKtx" }
+androidx-fragment-testing = { group = "androidx.fragment", name = "fragment-testing", version.ref = "fragmentTesting" }
+
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+google-devtools-ksp = { id = "com.google.devtools.ksp", version.ref = "googleDevtools" }
+serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "serialization-plugin" }
+
+
+[bundles]
+bindingDelegate = ["bindingDelegate-full", "bindingDelegate-noreflection"]
+kotlinx-coroutines = ["kotlinx-coroutines-core", "kotlinx-coroutines-android"]
+retrofit = ["retrofit", "retrofitConverter", "okkhttp3", "okkhttp3LogingInterceptor", "kotlinx-serialization"]
+elmslie = ["elmslie-core", "elmslie-android"]

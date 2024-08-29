@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Homework 1</string>
+    <string name="please_wait">Пожалуйста, подождите.</string>
+    <string name="get_contact_list">Получить список контактов</string>
+    <string name="contacts_not_found">Контакты не найдены</string>
+    <string name="access_to_contacts_required">Необходим доступ к контакам для работы приложения!</string>
+    <string name="access_to_contacts_denied">Доступ к контактам запрещен!</string>
+</resources>

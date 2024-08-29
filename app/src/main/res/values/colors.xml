@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+
+    <color name="saffron">#FEC654</color>
+    <color name="jasper">#DD614A</color>
+    <color name="apple">#4AB54D</color>
+    <color name="sea_green">#219653</color>
+    <color name="bangladesh_green">#006153</color>
+    <color name="jungle_green">#2A9D8F</color>
+    <color name="white">#FFFFFF</color>
+    <color name="lotion">#FAFAFA</color>
+    <color name="chinese_silver">#CCCCCC</color>
+    <color name="quick_silver">#A1A1A1</color>
+    <color name="spanish_gray">#999999</color>
+    <color name="philippine_gray">#919191</color>
+    <color name="davys_gray">#505050</color>
+    <color name="outer_space">#464646</color>
+    <color name="black_olive">#3A3A3A</color>
+    <color name="dark_charcoal">#323232</color>
+    <color name="charleston_green">#282828</color>
+    <color name="light_eerie_black">#1E1E1E</color>
+    <color name="normal_eerie_black">#1C1C1C</color>
+    <color name="dark_eerie_black">#1B1B1B</color>
+    <color name="chinese_black">#121212</color>
+    <color name="vampire_black">#070707</color>
+    <color name="black">#000000</color>
+
+    <color name="common_main_text_color">@color/lotion</color>
+    <color name="common_ic_color">@color/philippine_gray</color>
+    <color name="common_shimmer_color">@color/dark_charcoal</color>
+    <color name="common_shimmer_color_background">@color/dark_eerie_black</color>
+    <color name="common_additive_text_color">@color/quick_silver</color>
+
+    <color name="date_text_color">@color/quick_silver</color>
+
+    <color name="stream_text_color">@color/chinese_silver</color>
+    <color name="selected_stream_bg">@color/normal_eerie_black</color>
+    <color name="unselected_stream_bg">@color/chinese_black</color>
+    <color name="topic_default_color">@color/light_eerie_black</color>
+
+    <color name="dragger_color">@color/davys_gray</color>
+
+    <color name="status_bar_color">@color/light_eerie_black</color>
+
+    <color name="date_bg">@color/vampire_black</color>
+    <color name="emoji_text_color">@color/chinese_silver</color>
+
+    <color name="primary_dark_for_gradient">@color/bangladesh_green</color>
+    <color name="active_status_color">@color/apple</color>
+    <color name="idle_status_color">@color/saffron</color>
+    <color name="offline_status_color">@color/jasper</color>
+    <color name="search_field_background_tint">@color/dark_charcoal</color>
+    <color name="fragment_profile_log_out_button_color">@color/dark_eerie_black</color>
+
+    <color name="sent_image_color">@color/jungle_green</color>
+    <color name="add_something_image_color">@color/outer_space</color>
+
+    <color name="selected_tab">@color/sea_green</color>
+
+    <color name="ic_launcher_background">#2A9D8F</color>
+</resources>

@@ -1,0 +1,27 @@
+{
+  "result": "success",
+  "msg": "",
+  "message": {
+    "id": 439361468,
+    "sender_id": 709765,
+    "content": "<p>some text</p>",
+    "recipient_id": 1252628,
+    "timestamp": 1716044610,
+    "client": "okhttp",
+    "subject": "swimming turtles",
+    "topic_links": [],
+    "is_me_message": false,
+    "reactions": [],
+    "submessages": [],
+    "flags": [],
+    "sender_full_name": "Rostislav Kashentsev",
+    "sender_email": "user709765@tinkoff-android-spring-2024.zulipchat.com",
+    "sender_realm_str": "tinkoff-android-spring-2024",
+    "display_recipient": "general",
+    "type": "stream",
+    "stream_id": 432915,
+    "avatar_url": "https://zulip-avatars.s3.amazonaws.com/63414/d4578b59122d8f9e8c05fcb30b126853cc75c1ff?version=2",
+    "content_type": "text/html"
+  },
+  "raw_content": "some text"
+}

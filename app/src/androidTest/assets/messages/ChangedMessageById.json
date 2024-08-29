@@ -1,0 +1,63 @@
+{
+    "result": "success",
+    "msg": "",
+    "message": {
+        "id": 438198890,
+        "sender_id": 708884,
+        "content": "<p>a</p>",
+        "recipient_id": 1252628,
+        "timestamp": 1715534454,
+        "client": "okhttp",
+        "subject": "swimming turtles",
+        "topic_links": [],
+        "is_me_message": false,
+        "reactions": [
+            {
+                "emoji_name": "wink",
+                "emoji_code": "1f609",
+                "reaction_type": "unicode_emoji",
+                "user": {
+                    "email": "user709699@tinkoff-android-spring-2024.zulipchat.com",
+                    "id": 709699,
+                    "full_name": "Dmitry Kucherenko"
+                },
+                "user_id": 709699
+            },
+            {
+                "emoji_name": "jack-o-lantern",
+                "emoji_code": "1f383",
+                "reaction_type": "unicode_emoji",
+                "user": {
+                    "email": "user709777@tinkoff-android-spring-2024.zulipchat.com",
+                    "id": 709777,
+                    "full_name": "Ilya Bekmansurov"
+                },
+                "user_id": 709777
+            },
+            {
+                "emoji_name": "wink",
+                "emoji_code": "1f609",
+                "reaction_type": "unicode_emoji",
+                "user": {
+                    "email": "user709765@tinkoff-android-spring-2024.zulipchat.com",
+                    "id": 709765,
+                    "full_name": "Rostislav Kashentsev"
+                },
+                "user_id": 709765
+            }
+        ],
+        "submessages": [],
+        "flags": [
+            "read"
+        ],
+        "sender_full_name": "Дарья Крендикова",
+        "sender_email": "user708884@tinkoff-android-spring-2024.zulipchat.com",
+        "sender_realm_str": "tinkoff-android-spring-2024",
+        "display_recipient": "general",
+        "type": "stream",
+        "stream_id": 432915,
+        "avatar_url": "https://secure.gravatar.com/avatar/1340a04159bd29911a0e8bd275af6c72?d=identicon&version=1",
+        "content_type": "text/html"
+    },
+    "raw_content": "a"
+}

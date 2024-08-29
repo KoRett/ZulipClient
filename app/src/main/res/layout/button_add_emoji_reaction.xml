@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="42dp"
+    android:layout_height="30dp"
+    android:background="@drawable/unselected_emoji_bg"
+    android:contentDescription="@string/add_reaction"
+    android:src="@drawable/plus_ic" />

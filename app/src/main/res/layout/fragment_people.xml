@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".presentation.tabs.people.PeopleFragment">
+
+    <LinearLayout
+        android:id="@+id/searchContainer"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorSurfaceVariant"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editTextSearch"
+            style="@style/Widget.App.SearchFieldStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/common_big_margin"
+            android:layout_marginEnd="36dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:hint="@string/users_and_ellipsis"
+            android:importantForAutofill="no"
+            android:paddingHorizontal="35dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="28dp"
+            android:background="@color/transparent"
+            android:contentDescription="@string/search"
+            android:src="@drawable/search_ic" />
+    </LinearLayout>
+
+    <include layout="@layout/error_loading_data" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerPeople"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingVertical="8dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchContainer"
+        tools:listitem="@layout/item_user" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

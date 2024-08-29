@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/streamContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/stream_bg">
+
+    <TextView
+        android:id="@+id/textNameStream"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/common_big_margin"
+        android:layout_marginStart="@dimen/common_big_margin"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/common_main_text_color"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/viewLine"
+        app:layout_constraintEnd_toStartOf="@id/imageArrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="#general" />
+
+    <ImageView
+        android:id="@+id/imageArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/common_big_margin"
+        android:contentDescription="@string/arrow"
+        android:src="@drawable/arrow_ic"
+        app:layout_constraintBottom_toBottomOf="@id/textNameStream"
+        app:layout_constraintEnd_toStartOf="@id/buttonOptions"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@id/textNameStream"
+        app:layout_constraintTop_toTopOf="@id/textNameStream" />
+
+    <ImageButton
+        android:id="@+id/buttonOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/common_small_margin"
+        android:layout_marginEnd="@dimen/common_big_margin"
+        style="@style/Widget.App.IconButton"
+        android:src="@drawable/more_vert_ic"
+        app:layout_constraintBottom_toBottomOf="@id/imageArrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageArrow"
+        app:layout_constraintTop_toTopOf="@id/imageArrow" />
+
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/common_line_height"
+        android:background="?attr/colorSurfaceInverse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

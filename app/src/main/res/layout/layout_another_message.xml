@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageMessageAvatar"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:background="@color/jungle_green"
+        android:contentDescription="@string/avatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Full"
+        tools:src="@drawable/person_ic" />
+
+    <LinearLayout
+        android:id="@+id/textContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/common_small_margin"
+        android:background="@drawable/common_bg"
+        android:backgroundTint="@color/normal_eerie_black"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/common_normal_padding"
+        android:paddingVertical="@dimen/message_content_vertical_padding"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@id/imageMessageAvatar"
+        app:layout_constraintTop_toTopOf="@id/imageMessageAvatar">
+
+        <TextView
+            android:id="@+id/textUsername"
+            style="@style/Widget.App.MessageTextUsernameStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Username" />
+
+        <TextView
+            android:id="@+id/textAnotherContent"
+            style="@style/Widget.App.MessageTextContentStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Some message" />
+
+    </LinearLayout>
+
+    <com.korett.zulip_client.core.ui.view.FlexBoxLayout
+        android:id="@+id/anotherReactions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_small_margin"
+        android:visibility="gone"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/textContainer"
+        app:layout_constraintTop_toBottomOf="@id/textContainer" />
+</merge>

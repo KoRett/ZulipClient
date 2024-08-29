@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contactCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/common_horizontal_margin"
+    android:layout_marginTop="@dimen/common_item_margin"
+    android:layout_marginEnd="@dimen/common_horizontal_margin"
+    android:layout_marginBottom="@dimen/common_item_margin"
+    app:cardBackgroundColor="?attr/colorSurfaceContainerHigh"
+    app:cardCornerRadius="16dp"
+    app:strokeWidth="0dp">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textContactName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/common_horizontal_margin"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium" />
+
+</com.google.android.material.card.MaterialCardView>

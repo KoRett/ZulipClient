@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="15dp"
+    android:paddingVertical="8dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageAvatar"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Full"
+        tools:src="@drawable/person_ic" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageOnlineStatus"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:contentDescription="@string/online_status"
+        app:layout_constraintBottom_toBottomOf="@id/imageAvatar"
+        app:layout_constraintEnd_toEndOf="@id/imageAvatar"
+        app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Full"
+        tools:src="@color/active_status_color" />
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/common_small_margin"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textSize="@dimen/large_text_size"
+        app:layout_constraintBottom_toTopOf="@id/textEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageAvatar"
+        app:layout_constraintTop_toTopOf="@id/imageAvatar"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Darell Steward" />
+
+    <TextView
+        android:id="@+id/textEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/common_additive_text_color"
+        android:textSize="@dimen/normal_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/textName"
+        app:layout_constraintStart_toStartOf="@id/textName"
+        app:layout_constraintTop_toBottomOf="@id/textName"
+        tools:text="darell@company.com" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

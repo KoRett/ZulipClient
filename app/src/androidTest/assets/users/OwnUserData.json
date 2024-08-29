@@ -1,0 +1,21 @@
+{
+  "result": "success",
+  "msg": "",
+  "email": "user709765@tinkoff-android-spring-2024.zulipchat.com",
+  "user_id": 709765,
+  "avatar_version": 2,
+  "is_admin": false,
+  "is_owner": false,
+  "is_guest": false,
+  "is_billing_admin": false,
+  "role": 400,
+  "is_bot": false,
+  "full_name": "Rostislav Kashentsev",
+  "timezone": "Europe/Moscow",
+  "is_active": true,
+  "date_joined": "2024-04-13T07:18:33.208254+00:00",
+  "delivery_email": "kashencevrostik@gmail.com",
+  "avatar_url": "https://zulip-avatars.s3.amazonaws.com/63414/d4578b59122d8f9e8c05fcb30b126853cc75c1ff?version=2",
+  "profile_data": {},
+  "max_message_id": 439337765
+}

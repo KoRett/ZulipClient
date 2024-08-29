@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuStreamsItem"
+        android:icon="@drawable/stream_ic"
+        android:title="@string/streams" />
+    <item
+        android:id="@+id/menuPeopleItem"
+        android:icon="@drawable/people_ic"
+        android:title="@string/people" />
+    <item
+        android:id="@+id/menuProfileItem"
+        android:icon="@drawable/profile_ic"
+        android:title="@string/profile" />
+</menu>
